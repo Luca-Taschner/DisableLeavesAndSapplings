@@ -1,0 +1,7 @@
+name: DisableLeavesAndSapplings
+version: '${project.version}'
+main: gg.ninjagaming.disableleavesandsapplings.DisableLeavesAndSapplings
+api-version: '1.20'
+authors: [NinjaGaming, Luca Taschner]
+description: Disables all Leave Decay and Sappling Growth
+website: NinjaGaming.gg
