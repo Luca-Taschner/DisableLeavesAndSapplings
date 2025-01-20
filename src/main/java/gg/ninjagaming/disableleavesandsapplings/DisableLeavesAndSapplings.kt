@@ -1,6 +1,8 @@
 package gg.ninjagaming.disableleavesandsapplings
 
+import gg.ninjagaming.disableleavesandsapplings.eventlisteners.BlockFormEventListener
 import gg.ninjagaming.disableleavesandsapplings.eventlisteners.BlockGrowEventListener
+import gg.ninjagaming.disableleavesandsapplings.eventlisteners.BlockPhysicsEventListener
 import gg.ninjagaming.disableleavesandsapplings.eventlisteners.LeavesDecayEventListener
 import org.bukkit.plugin.java.JavaPlugin
 
@@ -14,6 +16,8 @@ class DisableLeavesAndSapplings : JavaPlugin() {
     private fun registerEvents() {
         server.pluginManager.registerEvents(LeavesDecayEventListener(), this)
         server.pluginManager.registerEvents(BlockGrowEventListener(), this)
+        server.pluginManager.registerEvents(BlockPhysicsEventListener, this)
+        server.pluginManager.registerEvents(BlockFormEventListener, this)
     }
 
     override fun onDisable() {
